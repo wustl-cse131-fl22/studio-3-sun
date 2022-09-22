@@ -16,13 +16,12 @@ public class Sieve {
 		//System.out.println(numbers[n]);
 		}
 		
-		
+		int a = 2;
+		int composite = 0;
+		for(a = 2;a < numbers.length; a++)
+		{
 			for(n = 0; n < numbers.length; n++)
 			{
-				int a = 2;
-				int composite = 0;
-				for(a = 2;a < numbers.length; a++)
-				{
 				if(numbers[n] % a == 0)	
 				{
 				numbers[n] = composite;
